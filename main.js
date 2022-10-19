@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Futbolista_1 = require("./Futbolista");
+var Masajista_1 = require("./Masajista");
+var Entrenador_1 = require("./Entrenador");
+var futbolista1 = new Futbolista_1.Futbolista("Juan", "Perez", 30202647, "Boca");
+var masajista1 = new Masajista_1.Masajista("Jose", "Perales", 22233445, "Shiatsu");
+var entrenado1 = new Entrenador_1.Entrenador("Francisco", "Torres", 2233445, "Occidental", "20 años");
+console.log("El apellido del futbolista 1 es: " + futbolista1.getApellido());
+console.log("El equipo simpatizante del futbolista 1 es: " + futbolista1.getEquipoSimpatizante());
+console.log("Hacer masajes a: " + masajista1.HacerMasajeA(futbolista1));
